@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bihua
+Version: 0.0.1
+Summary: A package for bihua.ai
+Home-page: https://github.com/bihua-ai/bihua
+Author: Eric Lee
+Author-email: eric.lee@bihua.ai
+License: ERIC LEE
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+

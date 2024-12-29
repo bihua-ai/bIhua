@@ -1,0 +1,35 @@
+
+HOME_PATH_OF_DATA_OF_ENTITIES="/opt/bihua/data/entities"
+HOME_PATH_OF_DATA_OF_RESIDENTS="/opt/bihua/data/entities/residents"
+HOME_PATH_OF_DATA_OF_GROUPS="/opt/bihua/data/entities/groups"
+
+RESIDENT_PROFILE_SUB_PATH="profile"
+GROUP_PROFILE_SUB_PATH="profile"
+
+RESIDENT_DOCUMENT_SUB_PATH="documents"
+GROUP_DOCUMENT_SUB_PATH="documents"
+
+RESIDENT_CHAT_HISTORY_SUB_PATH="chat_history"
+GROUP_CHAT_HISTORY_SUB_PATH="chat_history"
+THREAD_CHAT_HISTORY_SUB_PATH="chat_history"
+
+THREAD_SUB_PATH="threads"
+
+STAR_LOG_PATH = "/opt/bihua/data/logs/bihua.log"
+STAR_LOG_FILE_MAX_SIZE = 5000000
+STAR_LOG_FILE_BACKUP_COUNT = 7
+
+STAR_LLM_MODELS_LIST_JSON_PATH="/opt/bihua/data/llm_models/model_list.json"
+STAR_RESIDENT_LIST_JSON_PATH="/opt/bihua/data/entities/residents/resident_list.json"
+STAR_GROUP_LIST_JSON_PATH="/opt/bihua/data/entities/groups/group_list.json"
+
+MESSENGER_SERVER_URL_IN_DOCKER="http://localhost:8008"
+MESSENGER_SERVER_URL="https://messenger.b1.shuwantech.com"
+MESSENGER_SERVER_NAME="messenger.b1.shuwantech.com"
+
+ADMIN_ID="@admin:messenger.b1.shuwantech.com"
+ADMIN_PASSWORD="thisismy.password"
+ADMIN_ACCESS_TOKEN="syt_YWRtaW4_JyaVfBhsOyLrhnfixJZv_1kRUM1"
+
+APP_SERVICE_TOKEN = "bihua_agent_appservice_token"
+HOMESERVER_TOKEN = "bihua_agent_homeserver_token"

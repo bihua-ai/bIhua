@@ -1,0 +1,36 @@
+[
+    {
+        "resident_id": "@bot_002:messenger.b1.shuwantech.com",
+        "password": "thisismy.password",
+        "access_token": "",
+        "homeserver_url": "https://messenger.b1.shuwantech.com",
+        "username": "bot_002",
+        "display_name": "bot_002",
+        "avatar_http_url": "",
+        "email": "",
+        "agent": "agent",
+        "role": "admin",
+        "state": "active",
+        "last_login_timestamp_ms": 1735484387989.0,
+        "last_sync_timestamp_ms": 0.0,
+        "profile_text_path": "/opt/bihua/data/entities/residents/@bot_002:messenger.b1.shuwantech.com/profile/@bot_002:messenger.b1.shuwantech.com.txt",
+        "profile_json_path": "/opt/bihua/data/entities/residents/@bot_002:messenger.b1.shuwantech.com/profile/@bot_002:messenger.b1.shuwantech.com.json"
+    },
+    {
+        "resident_id": "@bot_001:messenger.b1.shuwantech.com",
+        "password": "thisismy.password",
+        "access_token": "",
+        "homeserver_url": "https://messenger.b1.shuwantech.com",
+        "username": "bot_001",
+        "display_name": "bot_001",
+        "avatar_http_url": "",
+        "email": "",
+        "agent": "agent",
+        "role": "admin",
+        "state": "active",
+        "last_login_timestamp_ms": 1735484388069.0,
+        "last_sync_timestamp_ms": 0.0,
+        "profile_text_path": "/opt/bihua/data/entities/residents/@bot_001:messenger.b1.shuwantech.com/profile/@bot_001:messenger.b1.shuwantech.com.txt",
+        "profile_json_path": "/opt/bihua/data/entities/residents/@bot_001:messenger.b1.shuwantech.com/profile/@bot_001:messenger.b1.shuwantech.com.json"
+    }
+]

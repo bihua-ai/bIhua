@@ -1,0 +1,207 @@
+[
+    {
+      "request_name": "AdminLoginRequest",
+      "api_name": "admin_login",
+      "input_info": {
+        "resident_id": {
+          "type": "string",
+          "description": "The unique ID of the resident",
+          "constraints": {
+            "min_length": 1,
+            "max_length": 100
+          }
+        },
+        "password": {
+          "type": "string",
+          "description": "The password for the resident account",
+          "constraints": {
+            "min_length": 8,
+            "max_length": 100
+          }
+        }
+      }
+    },
+    {
+      "request_name": "GetAllUsersRequest",
+      "api_name": "get_all_users",
+      "input_info": {
+        "base_url": {
+          "type": "string",
+          "description": "The base URL of your Synapse server",
+          "constraints": {
+            "min_length": 1
+          }
+        },
+        "access_token": {
+          "type": "string",
+          "description": "The access token for authenticating the request",
+          "constraints": {
+            "min_length": 1
+          }
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Number of users to fetch per request",
+          "default": 10,
+          "constraints": {
+            "ge": 1
+          }
+        }
+      }
+    },
+    {
+      "request_name": "RegisterUserRequest",
+      "api_name": "register_user",
+      "input_info": {
+        "username": {
+          "type": "string",
+          "description": "The username for the new user",
+          "constraints": {
+            "min_length": 1
+          }
+        },
+        "password": {
+          "type": "string",
+          "description": "The password for the new user account",
+          "constraints": {
+            "min_length": 8,
+            "max_length": 100
+          }
+        },
+        "homeserver_url": {
+          "type": "string",
+          "description": "The URL of the homeserver",
+          "constraints": {
+            "min_length": 1
+          }
+        }
+      }
+    },
+    {
+      "request_name": "ChangeUserDisplayNameRequest",
+      "api_name": "change_user_display_name",
+      "input_info": {
+        "resident_id": {
+          "type": "string",
+          "description": "The ID of the resident whose display name is to be changed",
+          "constraints": {
+            "min_length": 1
+          }
+        },
+        "new_displayname": {
+          "type": "string",
+          "description": "The new display name for the resident",
+          "constraints": {
+            "min_length": 1
+          }
+        }
+      }
+    },
+    {
+      "request_name": "ChangeUserTypeRequest",
+      "api_name": "change_user_type",
+      "input_info": {
+        "resident_id": {
+          "type": "string",
+          "description": "The ID of the resident whose agent type is to be changed",
+          "constraints": {
+            "min_length": 1
+          }
+        },
+        "new_agent_type": {
+          "type": "string",
+          "description": "The new agent type for the resident",
+          "constraints": {
+            "min_length": 1
+          }
+        }
+      }
+    },
+    {
+      "request_name": "ChangeUserRoleRequest",
+      "api_name": "change_user_role",
+      "input_info": {
+        "resident_id": {
+          "type": "string",
+          "description": "The ID of the resident whose role is to be changed",
+          "constraints": {
+            "min_length": 1
+          }
+        },
+        "new_role": {
+          "type": "string",
+          "description": "The new role for the resident",
+          "constraints": {
+            "min_length": 1
+          }
+        }
+      }
+    },
+    {
+      "request_name": "ChangeUserStateRequest",
+      "api_name": "change_user_state",
+      "input_info": {
+        "resident_id": {
+          "type": "string",
+          "description": "The ID of the resident whose state is to be changed",
+          "constraints": {
+            "min_length": 1
+          }
+        },
+        "new_state": {
+          "type": "string",
+          "description": "The new state for the resident",
+          "constraints": {
+            "min_length": 1
+          }
+        }
+      }
+    },
+    {
+      "request_name": "UpdateUserAvatarInMessengerRequest",
+      "api_name": "update_user_avatar_in_messenger",
+      "input_info": {
+        "resident_id": {
+          "type": "string",
+          "description": "The ID of the resident whose avatar is to be updated",
+          "constraints": {
+            "min_length": 1
+          }
+        },
+        "avatar_file_path": {
+          "type": "string",
+          "description": "The file path of the new avatar image",
+          "constraints": {
+            "min_length": 1
+          }
+        }
+      }
+    },
+    {
+      "request_name": "StartResidentMessagingRequest",
+      "api_name": "start_resident_messaging",
+      "input_info": {
+        "resident_id": {
+          "type": "string",
+          "description": "The ID of the resident to start messaging for",
+          "constraints": {
+            "min_length": 1
+          }
+        }
+      }
+    },
+    {
+      "request_name": "StopResidentMessagingRequest",
+      "api_name": "stop_resident_messaging",
+      "input_info": {
+        "resident_id": {
+          "type": "string",
+          "description": "The ID of the resident to stop messaging for",
+          "constraints": {
+            "min_length": 1
+          }
+        }
+      }
+    }
+  ]
+  

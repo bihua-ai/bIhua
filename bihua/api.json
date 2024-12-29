@@ -1,0 +1,226 @@
+{
+    "AdminLoginRequest": {
+      "type": "object",
+      "properties": {
+        "resident_id": {
+          "type": "string",
+          "min_length": 1,
+          "max_length": 100,
+          "description": "The unique ID of the resident"
+        },
+        "password": {
+          "type": "string",
+          "min_length": 8,
+          "max_length": 100,
+          "description": "The password for the resident account"
+        }
+      },
+      "required": [
+        "resident_id",
+        "password"
+      ],
+      "additionalProperties": false
+    },
+    "GetAllUsersRequest": {
+      "type": "object",
+      "properties": {
+        "base_url": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The base URL of your Synapse server"
+        },
+        "access_token": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The access token for authenticating the request"
+        },
+        "limit": {
+          "type": "integer",
+          "default": 10,
+          "ge": 1,
+          "description": "Number of users to fetch per request"
+        }
+      },
+      "required": [
+        "base_url",
+        "access_token"
+      ],
+      "additionalProperties": false
+    },
+    "RegisterUserRequest": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The username for the new user"
+        },
+        "password": {
+          "type": "string",
+          "min_length": 8,
+          "max_length": 100,
+          "description": "The password for the new user account"
+        },
+        "homeserver_url": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The URL of the homeserver"
+        }
+      },
+      "required": [
+        "username",
+        "password",
+        "homeserver_url"
+      ],
+      "additionalProperties": false
+    },
+    "ChangeUserPasswordRequest": {
+      "type": "object",
+      "properties": {
+        "resident_id": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The ID of the resident whose password is to be changed"
+        },
+        "new_password": {
+          "type": "string",
+          "min_length": 8,
+          "max_length": 100,
+          "description": "The new password for the resident account"
+        }
+      },
+      "required": [
+        "resident_id",
+        "new_password"
+      ],
+      "additionalProperties": false
+    },
+    "ChangeUserDisplayNameRequest": {
+      "type": "object",
+      "properties": {
+        "resident_id": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The ID of the resident whose display name is to be changed"
+        },
+        "new_displayname": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The new display name for the resident"
+        }
+      },
+      "required": [
+        "resident_id",
+        "new_displayname"
+      ],
+      "additionalProperties": false
+    },
+    "ChangeUserTypeRequest": {
+      "type": "object",
+      "properties": {
+        "resident_id": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The ID of the resident whose agent type is to be changed"
+        },
+        "new_agent_type": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The new agent type for the resident"
+        }
+      },
+      "required": [
+        "resident_id",
+        "new_agent_type"
+      ],
+      "additionalProperties": false
+    },
+    "ChangeUserRoleRequest": {
+      "type": "object",
+      "properties": {
+        "resident_id": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The ID of the resident whose role is to be changed"
+        },
+        "new_role": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The new role for the resident"
+        }
+      },
+      "required": [
+        "resident_id",
+        "new_role"
+      ],
+      "additionalProperties": false
+    },
+    "ChangeUserStateRequest": {
+      "type": "object",
+      "properties": {
+        "resident_id": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The ID of the resident whose state is to be changed"
+        },
+        "new_state": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The new state for the resident"
+        }
+      },
+      "required": [
+        "resident_id",
+        "new_state"
+      ],
+      "additionalProperties": false
+    },
+    "UpdateUserAvatarInMessengerRequest": {
+      "type": "object",
+      "properties": {
+        "resident_id": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The ID of the resident whose avatar is to be updated"
+        },
+        "avatar_file_path": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The file path of the new avatar image"
+        }
+      },
+      "required": [
+        "resident_id",
+        "avatar_file_path"
+      ],
+      "additionalProperties": false
+    },
+    "StartResidentMessagingRequest": {
+      "type": "object",
+      "properties": {
+        "resident_id": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The ID of the resident to start messaging for"
+        }
+      },
+      "required": [
+        "resident_id"
+      ],
+      "additionalProperties": false
+    },
+    "StopResidentMessagingRequest": {
+      "type": "object",
+      "properties": {
+        "resident_id": {
+          "type": "string",
+          "min_length": 1,
+          "description": "The ID of the resident to stop messaging for"
+        }
+      },
+      "required": [
+        "resident_id"
+      ],
+      "additionalProperties": false
+    }
+  }
